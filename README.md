@@ -1,0 +1,1 @@
+Задание по курсу на stepik.rg ["Автоматизация тестирования с помощью Selenium и Python"](https://stepik.org/course/575/)
