@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class BasePageLocators():
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group > a")
@@ -15,6 +15,7 @@ class LoginPageLocators:
     NEW_USER_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
     CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_BUTTON = (By.CSS_SELECTOR, '[name="registration_submit"]')
+
 
 class BasketPageLocators:
     BASKET_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
