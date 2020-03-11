@@ -26,3 +26,10 @@ class ProductPage(BasePage):
     def should_be_message_with_basket_price(self, book_price):
         price = self.browser.find_element(*ProductPageLocators.BASKET_PRICE_IN_MESSAGE).text
         assert price == book_price, "Другая цена " + price
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.CONFIRM_MESSAGE), \
+           "Success message is presented, but should not be"
+
+    def confirm_message_should_disappear(self):
+        assert self.is_disappeared(*ProductPageLocators.CONFIRM_MESSAGE)
