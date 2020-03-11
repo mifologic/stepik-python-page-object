@@ -18,11 +18,11 @@ class ProductPage(BasePage):
         price = self.browser.find_element(*ProductPageLocators.BOOK_PRICE)
         return price.text
 
-    def should_be_confirm_message(self, book_name):
+    def should_be_confirm_message_with_book_name(self, book_name):
         message = self.browser.find_element(*ProductPageLocators.BOOK_NAME_IN_MESSAGE)
         assert self.is_element_present(*ProductPageLocators.CONFIRM_MESSAGE)
         assert message.text == book_name, "Другое название книги " + message.text
 
-    def should_be_basket_price(self, book_price):
+    def should_be_message_with_basket_price(self, book_price):
         price = self.browser.find_element(*ProductPageLocators.BASKET_PRICE_IN_MESSAGE).text
         assert price == book_price, "Другая цена " + price
