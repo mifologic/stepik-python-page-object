@@ -3,4 +3,6 @@
 Реализация тестов с паттерном Page Object.
 
 Для генерации данных используется библиотека [mimesis](https://mimesis.readthedocs.io). Устанавливается из 
-requirements.txt.
+requirements.txt. 
+
+При запуске тестов не забывайте активировать виртуальное окружение. Если запускаете через PyCharm, то в настройках нужно выбарть Project Interpreter.
